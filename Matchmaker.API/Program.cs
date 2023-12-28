@@ -76,24 +76,24 @@ app.MapDelete("/deleteLike",(Context context, int userId, int likedId) =>
 });
 
 //funkar ej ännu!
-app.MapPost("/sendMessage", (Context context, string content, int senderUserId, int receiverUserId) =>
-{
-    Message message = new Message(content,senderUserId,receiverUserId);
-    context.Messages.Add(message);
-    context.SaveChanges();
+// app.MapPost("/sendMessage", (Context context, string content, int senderUserId, int receiverUserId) =>
+// {
+//     Message message = new Message(content,senderUserId,receiverUserId);
+//     context.Messages.Add(message);
+//     context.SaveChanges();
 
-    return Results.Ok();
-});
-//funkar ej ännu!
-app.MapGet("/getMessages", (Context context, int userId) =>
-{
-    var messages = context.Messages
-        .Where(msg => msg.SenderId == userId || msg.RecieverId == userId)
-        .OrderBy(msg => msg.TimeStamp)
-        .ToList();
+//     return Results.Ok();
+// });
+// //funkar ej ännu!
+// app.MapGet("/getMessages", (Context context, int userId) =>
+// {
+//     var messages = context.Messages
+//         .Where(msg => msg.SenderId == userId || msg.RecieverId == userId)
+//         .OrderBy(msg => msg.TimeStamp)
+//         .ToList();
 
-    return Results.Ok();
-});
+//     return Results.Ok();
+// });
 
 
 app.Run();

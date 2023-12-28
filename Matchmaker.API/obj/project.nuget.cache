@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jph4lv8avqOKhtXMnhw0VbI1Gk69zay6s3a5JO7s25iIrdhnu6QrCS1s1wDCi7gMt9rmJXG3UolDrdIldZqUSA==",
+  "dgSpecHash": "8aZUtVGOaBO5WCkMKGftQG+bGbct+YvCEilSzayReoEvlk2ztS4/+ews+3hhQeg+sk3cBNCNllnba94UqQZHGA==",
   "success": true,
-  "projectFilePath": "/Users/emil/Documents/csharpprojs/matchmaker/Matchmaker.API/Matchmaker.API.csproj",
+  "projectFilePath": "/Users/emil/Documents/csharpprojs/matchmaker/matchmaker/Matchmaker.API/Matchmaker.API.csproj",
   "expectedPackageFiles": [
     "/Users/emil/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/emil/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",

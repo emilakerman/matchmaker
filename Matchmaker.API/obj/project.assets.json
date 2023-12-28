@@ -4471,11 +4471,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/emil/Documents/csharpprojs/matchmaker/Matchmaker.API/Matchmaker.API.csproj",
+      "projectUniqueName": "/Users/emil/Documents/csharpprojs/matchmaker/matchmaker/Matchmaker.API/Matchmaker.API.csproj",
       "projectName": "Matchmaker.API",
-      "projectPath": "/Users/emil/Documents/csharpprojs/matchmaker/Matchmaker.API/Matchmaker.API.csproj",
+      "projectPath": "/Users/emil/Documents/csharpprojs/matchmaker/matchmaker/Matchmaker.API/Matchmaker.API.csproj",
       "packagesPath": "/Users/emil/.nuget/packages/",
-      "outputPath": "/Users/emil/Documents/csharpprojs/matchmaker/Matchmaker.API/obj/",
+      "outputPath": "/Users/emil/Documents/csharpprojs/matchmaker/matchmaker/Matchmaker.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/emil/.nuget/NuGet/NuGet.Config"
