@@ -4,8 +4,6 @@ using Matchmaker.API.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -15,7 +13,7 @@ builder.Services.AddDbContext<Context>(
             builder.Configuration.GetConnectionString("MatchmakerConnection")
         )
 );
-builder.Services.AddDbContext<Context>(); // < den
+builder.Services.AddDbContext<Context>();
 
 
 var app = builder.Build();
@@ -64,11 +62,10 @@ app.MapPut("/dislike", (Context context, int userId, int disLikedId) =>
     context.SaveChanges();
     return Results.Ok();
      }
-    
 });
 
-//delete likes
-app.MapDelete("/deleteLike",(Context context, int userId, int likedId) =>
+// Delete like
+app.MapDelete("/like",(Context context, int userId, int likedId) =>
 {
     User? user = context.Users.Find(userId);
     user?.Likes?.Remove(likedId);

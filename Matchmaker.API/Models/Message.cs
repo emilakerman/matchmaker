@@ -7,7 +7,6 @@ public class Message {
     public int RecieverId { get; set; }
     public DateTime TimeStamp { get; set; }
 
-
     public Message(string content, int senderId, int recieverId )
     {
         Content = content;
